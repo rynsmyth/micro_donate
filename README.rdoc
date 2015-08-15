@@ -1,14 +1,14 @@
-This is a micro donations Rails app for communities.<br/>
+This is a micro donations Rails app for communities.
 
-To Do: (Pick a item and get shit done)<br/>
-1) Set up Heroku and deploy<br/>
-2) Create Pages controller<br/>
-3) Create Home page with added routes<br/>
-4) Create About page with added routes<br/>
-5) Add Bootstrap gem and set up app for Bootstrap<br/>
-6) Add navbar for app with working links<br/>
-7) Add Font Awesome gem and set up<br/>
-8) Create Contacts (form, database, controller, routes and views)<br/>
-9) Form validations<br/>
-10) Add Devise gem for UA<br/>
-11) Set up Devise<br/>
+To Do: (Pick a item and get shit done)
+1) Set up Heroku and deploy
+2) Create Pages controller
+3) Create Home page with added routes
+4) Create About page with added routes
+5) Add Bootstrap gem and set up app for Bootstrap
+6) Add navbar for app with working links
+7) Add Font Awesome gem and set up
+8) Create Contacts (form, database, controller, routes and views)
+9) Form validations
+10) Add Devise gem for UA
+11) Set up Devise
