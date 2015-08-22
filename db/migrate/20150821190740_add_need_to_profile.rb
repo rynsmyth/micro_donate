@@ -1,5 +1,5 @@
 class AddNeedToProfile < ActiveRecord::Migration
   def change
-      add_column :profiles, :need, :text_area
+      add_column :profiles, :need, :text
   end
 end
