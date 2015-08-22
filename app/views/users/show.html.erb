@@ -1,4 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well text-center">
+        <h2><%= @user.profile.first_name %>
+          <%= @user.profile.last_name %>
+        </h2>
 
-<%= @user.profile.first_name %> <%= @user.profile.last_name %>
-<%= @user.profile.description %>
-<%= @user.profile.need %>
+        <p class="text-left">
+          <%= @user.profile.description %>
+        </p>
+        <h4>Need</h4>
+
+        <p class="text-left">
+          <%= @user.profile.need %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

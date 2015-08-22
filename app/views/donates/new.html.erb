@@ -1,0 +1,13 @@
+<%= form_tag donates_path do %>
+  <article>
+    <label class="amount white-text">
+      <span>Donation: $5.00</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Paying It Forward"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>

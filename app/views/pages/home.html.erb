@@ -1,7 +1,7 @@
 <div class="jumbotron text-center">
   <h1>Welcome to Micro Donate</h1>
 
-  <h3>Helping anyway we can!</h3>
+  <h3>Helping any way we can!</h3>
 </div>
 <div class="row text-center">
   <% if user_signed_in? %>
@@ -19,7 +19,7 @@
     <div class="col-md-6">
       <div class="well">
         <h2>The Community</h2>
-        <%= link_to 'Visit The Community', '#', class: 'btn btn-default btn-lg btn-block' %>
+        <%= link_to 'Visit The Community', users_path, class: 'btn btn-default btn-lg btn-block' %>
       </div>
     </div>
   <% else %>
@@ -34,7 +34,7 @@
       <div class="white-text">
         <h2>Want to donate?</h2>
         <h4>If you're looking to give a little help</h4>
-        <%= link_to "Donate", new_user_registration_path(plan: @donate), class: 'btn btn-success btn-lg btn-block' %>
+        <%= link_to "Donate", users_path, class: 'btn btn-success btn-lg btn-block' %>
       </div>
     </div>
   <% end %>

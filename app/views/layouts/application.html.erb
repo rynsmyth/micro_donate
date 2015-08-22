@@ -3,9 +3,7 @@
 <head>
   <title>Micro Donate</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
   <%= javascript_include_tag 'application' %>
-  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -25,6 +23,7 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <div class="nav navbar-nav navbar-right">
+        <%= link_to 'Donate', users_path, class: 'btn btn-success navbar-btn', method: :get %>
         <% if current_user %>
           <%= button_to 'Log Out', destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
         <% else %>

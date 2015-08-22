@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resource :profile
   end
   resources :contacts
+  resources :donates
   get '/about' => 'pages#about'
   root 'pages#home'
 end
