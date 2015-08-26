@@ -1,10 +1,18 @@
 <div class="row">
   <div class="container">
-      <% @user.each do |user| %>
-              <%= user.profile.need %>
-              <%= link_to 'Donate', new_donate_path, class: 'btn btn-success pull-right' %>
+    <% @users.each do |user| %>
+      <% if user.profile %>
+        <div class="col-md-4">
+          <div class="well">
+          <ul class="list-unstyled text-center">
+            <li><strong>Need</strong></li>
+            <li><%= user.profile.need %></li>
+            <li class="text-right"><%= link_to 'Donate', new_donate_path, class: 'btn btn-success', method: :get %></li>
+          </ul>
+          </div>
+        </div>
       <% end %>
-
+    <% end %>
   </div>
 </div>
 
